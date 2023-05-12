@@ -1,0 +1,15 @@
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1\bin\Debug\net6.0\CodeProject1.deps.json
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1\bin\Debug\net6.0\CodeProject1.dll
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1\bin\Debug\net6.0\CodeProject1.pdb
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1\bin\Debug\net6.0\CodeProject1.Core.dll
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1\bin\Debug\net6.0\CodeProject1.Core.pdb
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1\obj\Debug\net6.0\CodeProject1.csproj.AssemblyReference.cache
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1\obj\Debug\net6.0\CodeProject1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1\obj\Debug\net6.0\CodeProject1.AssemblyInfoInputs.cache
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1\obj\Debug\net6.0\CodeProject1.AssemblyInfo.cs
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1\obj\Debug\net6.0\CodeProject1.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1\obj\Debug\net6.0\CodeProject1.csproj.CopyComplete
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1\obj\Debug\net6.0\CodeProject1.dll
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1\obj\Debug\net6.0\refint\CodeProject1.dll
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1\obj\Debug\net6.0\CodeProject1.pdb
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1\obj\Debug\net6.0\ref\CodeProject1.dll
