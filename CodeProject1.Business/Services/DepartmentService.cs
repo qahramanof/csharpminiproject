@@ -21,7 +21,7 @@ public class DepartmentService : IDepartmentService
         var name=departmentName.Trim();
         if(string.IsNullOrEmpty(name) )
         {
-            throw new SizeException(Helper.Errors["SizeException"]);
+            throw new NullReferenceException();
         }
         if(departmentRepository.GetByName(name)!=null) 
         {
@@ -33,7 +33,7 @@ public class DepartmentService : IDepartmentService
             throw new NotFoundException($"{companyName} - doesn't exist");
              
         }
-        if(employeeLimit>=2)
+        if(employeeLimit<2)
         {
             throw new SizeException(Helper.Errors["SizeException"]);
         }

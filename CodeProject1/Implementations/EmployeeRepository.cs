@@ -1,6 +1,7 @@
 ﻿using CodeProject1.Contexts;
 using CodeProject1.Core.Entities;
 using CodeProject1.Interfaces;
+using System.Xml.Linq;
 
 namespace CodeProject1.Implementations;
 
@@ -42,5 +43,9 @@ public class EmployeeRepository : IRepository<Employee>
     public List<Employee> GetAllByName(string name)
     {
         return DBContext.Employees.FindAll(s=>s.Name== name);
+    }
+    public List<Employee>GetAllByDepartmenttId(int id)
+    {
+        return DBContext.Employees.FindAll(s => s.DepartmentId == id);
     }
 }

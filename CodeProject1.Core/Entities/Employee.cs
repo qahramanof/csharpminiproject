@@ -17,17 +17,18 @@ public class Employee : IEntity
     public string Name { get; set; }
     public string Surname { get; set; }
 
-    public static int DepartmentId { get; set; }
+    public  int DepartmentId { get; set; }
 
-    public Employee()
-    {
-        EmployeeId = _id;
-        _id++;
-    }
-    public Employee(string name, string surname) : this()
+
+    public Employee(string name, string surname,double salary,int departmentid)
     {
         Name = name;
         Surname = surname;
+        Salary = salary; 
+        DepartmentId = departmentid;
+        EmployeeId = _id;
+        _id++;
+
     }
 
     public override string ToString()
