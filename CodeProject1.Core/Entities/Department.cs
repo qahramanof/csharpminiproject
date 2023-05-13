@@ -1,4 +1,4 @@
-﻿using CodeProject1.Core.Interfaces;
+﻿ using CodeProject1.Core.Interfaces;
 
 namespace CodeProject1.Core.Entities;
 
@@ -14,15 +14,12 @@ public class Department : IEntity
 
     public int DepartmentId { get; set; }
 
-    public Department()
-    {
-        DepartmentId = _id;
-        _id++;
-    }
-    public Department(string name, int employeelimit) : this()
+    public Department(string name, int employeelimit) 
     {
         Name = name;
         EmployeeLimit = employeelimit;
+        DepartmentId = _id;
+        _id++;
     }
 
     public override string ToString()

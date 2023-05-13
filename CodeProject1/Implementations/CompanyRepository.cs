@@ -23,9 +23,14 @@ public class CompanyRepository : IRepository<Company>
         cmp.Name = entity.Name;
 
     }
+    
     public Company? Get(int id)
     {
         return DBContext.Companys.Find(t => t.CompanyId == id);
+    } 
+    public Company? GetByName(string name)
+    {
+        return DBContext.Companys.Find(t => t.Name == name);
     }
 
     public List<Company> GetAll()
@@ -33,4 +38,8 @@ public class CompanyRepository : IRepository<Company>
         return DBContext.Companys;
     }
 
+    public List<Company> GetAllByName(string name)
+    {
+        throw new NotImplementedException();
+    }
 }

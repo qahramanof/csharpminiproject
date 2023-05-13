@@ -1,0 +1,109 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "CodeProject1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CodeProject1.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CodeProject1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CodeProject1.dll": {}
+        }
+      },
+      "CodeProject1.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CodeProject1.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CodeProject1.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CodeProject1/1.0.0": {
+      "type": "project",
+      "path": "../CodeProject1/CodeProject1.csproj",
+      "msbuildProject": "../CodeProject1/CodeProject1.csproj"
+    },
+    "CodeProject1.Core/1.0.0": {
+      "type": "project",
+      "path": "../CodeProject1.Core/CodeProject1.Core.csproj",
+      "msbuildProject": "../CodeProject1.Core/CodeProject1.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "CodeProject1 >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\user\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\user\\Documents\\c# projeleri\\CodeProject1\\CodeProject1.Business\\CodeProject1.Business.csproj",
+      "projectName": "CodeProject1.Business",
+      "projectPath": "C:\\Users\\user\\Documents\\c# projeleri\\CodeProject1\\CodeProject1.Business\\CodeProject1.Business.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Documents\\c# projeleri\\CodeProject1\\CodeProject1.Business\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\user\\Documents\\c# projeleri\\CodeProject1\\CodeProject1\\CodeProject1.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\c# projeleri\\CodeProject1\\CodeProject1\\CodeProject1.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

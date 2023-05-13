@@ -1,0 +1,17 @@
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\bin\Debug\net6.0\CodeProject1.Business.deps.json
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\bin\Debug\net6.0\CodeProject1.Business.dll
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\bin\Debug\net6.0\CodeProject1.Business.pdb
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\bin\Debug\net6.0\CodeProject1.Core.dll
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\bin\Debug\net6.0\CodeProject1.dll
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\bin\Debug\net6.0\CodeProject1.pdb
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\bin\Debug\net6.0\CodeProject1.Core.pdb
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\obj\Debug\net6.0\CodeProject1.Business.csproj.AssemblyReference.cache
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\obj\Debug\net6.0\CodeProject1.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\obj\Debug\net6.0\CodeProject1.Business.AssemblyInfoInputs.cache
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\obj\Debug\net6.0\CodeProject1.Business.AssemblyInfo.cs
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\obj\Debug\net6.0\CodeProject1.Business.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\obj\Debug\net6.0\CodeProject1.Business.csproj.CopyComplete
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\obj\Debug\net6.0\CodeProject1.Business.dll
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\obj\Debug\net6.0\refint\CodeProject1.Business.dll
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\obj\Debug\net6.0\CodeProject1.Business.pdb
+C:\Users\user\Documents\c# projeleri\CodeProject1\CodeProject1.Business\obj\Debug\net6.0\ref\CodeProject1.Business.dll

@@ -9,5 +9,6 @@ public interface IRepository<T> where T : IEntity
     void Delete(T entity);
     T? Get(int id);
     List<T> GetAll();
-
+    T? GetByName(string name);
+    List<T> GetAllByName(string name);
 }

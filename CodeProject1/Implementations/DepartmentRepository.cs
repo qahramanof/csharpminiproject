@@ -32,4 +32,13 @@ public class DepartmentRepository : IRepository<Department>
         return DBContext.Departments;
     }
 
+    public Department? GetByName(string name)
+    {
+       return DBContext.Departments.Find(g => g.Name== name);
+    }
+
+    public List<Department> GetAllByName(string name)
+    {
+        return DBContext.Departments.FindAll(g=>g.Name== name);
+    }
 }
