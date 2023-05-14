@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeProject1", "CodeProject
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeProject1.Business", "CodeProject1.Business\CodeProject1.Business.csproj", "{C39F05A9-ECB1-48CA-81E5-D94EA1A08CE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeAcademyMiniProject", "CodeAcademyMiniProject\CodeAcademyMiniProject.csproj", "{586F675C-5B40-496A-B937-3BB25EFDE4BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C39F05A9-ECB1-48CA-81E5-D94EA1A08CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C39F05A9-ECB1-48CA-81E5-D94EA1A08CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C39F05A9-ECB1-48CA-81E5-D94EA1A08CE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{586F675C-5B40-496A-B937-3BB25EFDE4BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{586F675C-5B40-496A-B937-3BB25EFDE4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{586F675C-5B40-496A-B937-3BB25EFDE4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{586F675C-5B40-496A-B937-3BB25EFDE4BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
