@@ -17,7 +17,7 @@ public class DepartmentRepository : IRepository<Department>
     }
     public void Update(Department entity)
     {
-        Department dpt = DBContext.Departments.Find(st => st.DepartmentId == entity.DepartmentId);
+        Department? dpt = DBContext.Departments.Find(st => st.DepartmentId == entity.DepartmentId);
         dpt.EmployeeLimit= entity.EmployeeLimit;
         dpt.Name = entity.Name;
     }

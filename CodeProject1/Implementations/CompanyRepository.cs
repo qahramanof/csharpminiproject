@@ -19,7 +19,7 @@ public class CompanyRepository : IRepository<Company>
 
     public void Update(Company entity)
     {
-        Company cmp = DBContext.Companys.Find(t => t.CompanyId == entity.CompanyId);
+        Company? cmp = DBContext.Companys.Find(t => t.CompanyId == entity.CompanyId);
         cmp.Name = entity.Name;
 
     }

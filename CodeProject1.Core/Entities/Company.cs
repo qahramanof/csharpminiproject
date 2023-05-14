@@ -8,13 +8,11 @@ public class Company : IEntity
     public string Name { get; set; }
     public int CompanyId { get; }
 
-    public Company()
-    {
-        CompanyId = _id;
-        _id++;
-    }
-    public Company(string name) : this()
+   
+    public Company(string name)
     {
         Name = name;
+        CompanyId = _id;
+        _id++;
     }
 }

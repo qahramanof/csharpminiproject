@@ -19,7 +19,7 @@ public class EmployeeRepository : IRepository<Employee>
 
     public void Update(Employee entity)
     {
-        Employee empp=  DBContext.Employees.Find(emp => emp.EmployeeId == entity.EmployeeId);
+        Employee? empp=  DBContext.Employees.Find(emp => emp.EmployeeId == entity.EmployeeId);
         empp.Name= entity.Name;
         empp.Surname= entity.Surname;
         empp.Salary= entity.Salary;

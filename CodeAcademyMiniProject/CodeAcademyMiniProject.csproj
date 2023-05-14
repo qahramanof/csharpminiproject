@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CodeProject1.Business\CodeProject1.Business.csproj" />
-    <ProjectReference Include="..\CodeProject1.Core\CodeProject1.Core.csproj" />
   </ItemGroup>
 
 </Project>
