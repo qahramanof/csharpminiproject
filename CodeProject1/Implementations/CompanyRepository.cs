@@ -1,6 +1,5 @@
 ﻿using CodeProject1.Contexts;
 using CodeProject1.Core.Entities;
-using CodeProject1.Core.Interfaces;
 using CodeProject1.Interfaces;
 
 namespace CodeProject1.Implementations;

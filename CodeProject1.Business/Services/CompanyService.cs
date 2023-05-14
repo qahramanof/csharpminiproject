@@ -2,6 +2,7 @@
 
 
 using CodeProject1.Business.Interfaces;
+using CodeProject1.Contexts;
 using CodeProject1.Core.Entities;
 using CodeProject1.Exceptoins;
 using CodeProject1.Helpers;
@@ -29,7 +30,7 @@ public class CompanyService : ICompanyService
         {
             throw new SizeException(Helper.Errors["SizeException"]);
         }
-        Company company=new Company(name1);
+        Company company=new Company(name);
         companyRepository.Add(company);
 
     }
@@ -37,16 +38,27 @@ public class CompanyService : ICompanyService
 
     public void Delete(string name)
     {
-        throw new NotImplementedException();
+        DBContext.Companys.Find(cmp=>cmp.Name==name);
+      throw new NotFoundException("such a company does not exist");    
     }
 
     public List<Company> GetAll()
     {
-        throw new NotImplementedException();
+        return DBContext.Companys;
     }
 
     public Company GetById(int id)
     {
-        throw new NotImplementedException();
+        var count=DBContext.Companys.Count();
+        if(count>id)
+        {
+        throw new NotFoundException("no such id");
+
+        }
+        else
+        {
+        return DBContext.Companys.Find(cmp => cmp.CompanyId == id);
+
+        }
     }
 }

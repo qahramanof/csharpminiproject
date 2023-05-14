@@ -1,5 +1,6 @@
-﻿using CodeProject1.Core.Entities;
-using static CodeProject1.Business.DTOs.EmployeeDto;
+﻿using CodeProject1.Business.DTOs;
+using CodeProject1.Core.Entities;
+using static CodeProject1.Business.DTOs.EmployeeCreateDto;
 
 namespace CodeProject1.Business.Interfaces;
 

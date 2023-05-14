@@ -1,10 +1,12 @@
 ﻿
 using CodeProject1.Business.DTOs;
 using CodeProject1.Business.Interfaces;
+using CodeProject1.Contexts;
 using CodeProject1.Core.Entities;
 using CodeProject1.Exceptoins;
 using CodeProject1.Helpers;
 using CodeProject1.Implementations;
+using static CodeProject1.Business.DTOs.EmployeeCreateDto;
 
 namespace CodeProject1.Business.Services;
 
@@ -18,7 +20,7 @@ public class EmployeeService : IEmployeeService
         employeeRepository= new EmployeeRepository();
         departmentRepository= new DepartmentRepository();
     }
-    public void Create(EmployeeDto.EmployeeCreateDto employeeCreateDto)
+    public void Create(EmployeeCreateDto employeeCreateDto)
     {
         var name = employeeCreateDto.name.Trim();
         if (string.IsNullOrEmpty(name))
@@ -53,31 +55,63 @@ public class EmployeeService : IEmployeeService
 
     public void Delete(int id)
     {
-        throw new NotImplementedException();
+        var employee=DBContext.Employees.Find(re=>re.EmployeeId==id);
+       if(employee!=null)
+        {
+            DBContext.Employees.Remove(employee);
+        }
+       else
+        {
+            throw new NotValidWordException(Helper.Errors["NotValidWordException"]);
+        }
     }
 
     public List<Employee> GetAll(int skip, int take)
     {
-        throw new NotImplementedException();
+        return DBContext.Employees.FindAll(he => he.EmployeeId <= take && he.EmployeeId >= skip);
     }
 
     public List<Employee> GetEmployeeByDepartmentId(int id)
     {
-        throw new NotImplementedException();
+        return DBContext.Employees.FindAll(fe=>fe.EmployeeId== id);
     }
 
     public Employee GetEmployeeById(int id)
     {
-        throw new NotImplementedException();
+        var count = DBContext.Employees.Count();
+        if(count>=id)
+        {
+            throw new NotFoundException("not found");
+        }
+        return DBContext.Employees.Find(de => de.EmployeeId == id);
     }
 
     public List<Employee> GetEmployeeByName(string name)
     {
-        throw new NotImplementedException();
+        return DBContext.Employees.FindAll(emp => emp.Name == name);
     }
 
-    public void Update(int id, EmployeeDto.EmployeeCreateDto employeeCreateDto)
+    public void Update(int id, EmployeeCreateDto employeeCreateDto)
     {
-        throw new NotImplementedException();
+        try
+        {
+            var employee = DBContext.Employees.Find(emp => emp.EmployeeId == id);
+            if (employee != null)
+            {
+                employee.Name = employeeCreateDto.name;
+                employee.Surname = employeeCreateDto.surname;
+                employee.Salary = employeeCreateDto.salary;
+            }
+        }
+        catch (Exception)
+        {
+
+              throw new NotFoundException("you cannot exceed the capacity");
+        }
+        
     }
+
+  
+
+   
 }
