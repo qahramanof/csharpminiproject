@@ -1,4 +1,4 @@
-﻿
+﻿ 
 using CodeProject1.Business.Interfaces;
 using CodeProject1.Contexts;
 using CodeProject1.Core.Entities;
@@ -66,8 +66,9 @@ public class DepartmentService : IDepartmentService
 
     public Department GetById(int id)
     {
-                var count = DBContext.Departments.Count();
-        if (count<id)
+        var count = DBContext.Departments.Count();
+        
+        if (count<=id)
         {
             throw new NotFoundException("This id was not found");
         }
@@ -86,8 +87,9 @@ public class DepartmentService : IDepartmentService
             
             }
            else
+        
         {
-            return DBContext.Departments.Find(ce => ce.Name == departmentName);
+            return department;
         }
         
 
@@ -96,15 +98,16 @@ public class DepartmentService : IDepartmentService
 
     public void Update(int id, int EmployeeLimit)
     {
-      var count=DBContext.Departments.Count();
-        if (count<EmployeeLimit)
+
+        var count = DBContext.Departments.Count();
+        if (count < EmployeeLimit)
         {
-        throw new NotFoundException("you cannot exceed the capacity");
+            throw new NotFoundException("you cannot exceed the capacity");
 
         }
         else
         {
-          DBContext.Departments.Find(dpe => dpe.DepartmentId == id && dpe.EmployeeLimit == EmployeeLimit);
+            DBContext.Departments.Find(dpe => dpe.DepartmentId == id && dpe.EmployeeLimit == EmployeeLimit);
 
         }
     }

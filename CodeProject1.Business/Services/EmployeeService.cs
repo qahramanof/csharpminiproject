@@ -79,7 +79,7 @@ public class EmployeeService : IEmployeeService
     public Employee GetEmployeeById(int id)
     {
         var count = DBContext.Employees.Count();
-        if(count>=id)
+        if(count<id)
         {
             throw new NotFoundException("not found");
         }
@@ -88,6 +88,11 @@ public class EmployeeService : IEmployeeService
 
     public List<Employee> GetEmployeeByName(string name)
     {
+        var tmpname=employeeRepository.GetByName(name);
+        if(tmpname==null)
+        {
+            throw new NotFoundException("This employee was not found");
+        }
         return DBContext.Employees.FindAll(emp => emp.Name == name);
     }
 
