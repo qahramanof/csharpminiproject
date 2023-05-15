@@ -111,21 +111,7 @@ public class EmployeeService : IEmployeeService
         {
             throw new NotFoundException("You cannot exceed the capacity");
         }
-        //try
-        //{
-        //    var employee = DBContext.Employees.Find(emp => emp.EmployeeId == id);
-        //    if (employee != null)
-        //    {
-        //        employee.Name = employeeCreateDto.name;
-        //        employee.Surname = employeeCreateDto.surname;
-        //        employee.Salary = employeeCreateDto.salary;
-        //    }
-        //}
-        //catch (Exception)
-        //{
-
-        //      throw new NotFoundException("you cannot exceed the capacity");
-        //}
+       
 
     }
 

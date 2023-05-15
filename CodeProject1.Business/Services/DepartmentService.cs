@@ -105,6 +105,16 @@ public class DepartmentService : IDepartmentService
         
     }
 
+    public void   DpeAdd(Employee employee,string departmentName)
+    {
+        var department = departmentRepository.GetByName(departmentName);
+        if(department!=null)
+        {
+            throw new NotFoundException("This department wasn't found");
+        }
+          
+    }
+
     public void Update(int id, int EmployeeLimit)
     {
 
@@ -120,4 +130,5 @@ public class DepartmentService : IDepartmentService
 
         }
     }
+    
 }
