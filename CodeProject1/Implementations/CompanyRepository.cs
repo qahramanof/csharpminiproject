@@ -39,6 +39,6 @@ public class CompanyRepository : IRepository<Company>
 
     public List<Company> GetAllByName(string name)
     {
-        throw new NotImplementedException();
+       return DBContext.Companys.FindAll(cpe=>cpe.Name== name); 
     }
 }

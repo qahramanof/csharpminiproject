@@ -50,7 +50,8 @@ public class EmployeeService : IEmployeeService
         {
             throw new CapacityNotEnoughException(Helper.Errors["CapacityNotEnoughException"]);
         }
-
+        Employee employee = new Employee(employeeCreateDto.name, employeeCreateDto.surname, employeeCreateDto.salary, department.DepartmentId);
+        DBContext.Employees.Add(employee);
     }
 
     public void Delete(int id)
@@ -98,22 +99,34 @@ public class EmployeeService : IEmployeeService
 
     public void Update(int id, EmployeeCreateDto employeeCreateDto)
     {
-        try
-        {
-            var employee = DBContext.Employees.Find(emp => emp.EmployeeId == id);
-            if (employee != null)
-            {
-                employee.Name = employeeCreateDto.name;
-                employee.Surname = employeeCreateDto.surname;
-                employee.Salary = employeeCreateDto.salary;
-            }
-        }
-        catch (Exception)
+        var employee=DBContext.Employees.Find(emp=>emp.EmployeeId==id);
+        if(employee!=null)
         {
 
-              throw new NotFoundException("you cannot exceed the capacity");
+                employee.Name = employeeCreateDto.name;
+                  employee.Surname = employeeCreateDto.surname;
+                    employee.Salary = employeeCreateDto.salary;
         }
-        
+        else
+        {
+            throw new NotFoundException("You cannot exceed the capacity");
+        }
+        //try
+        //{
+        //    var employee = DBContext.Employees.Find(emp => emp.EmployeeId == id);
+        //    if (employee != null)
+        //    {
+        //        employee.Name = employeeCreateDto.name;
+        //        employee.Surname = employeeCreateDto.surname;
+        //        employee.Salary = employeeCreateDto.salary;
+        //    }
+        //}
+        //catch (Exception)
+        //{
+
+        //      throw new NotFoundException("you cannot exceed the capacity");
+        //}
+
     }
 
   

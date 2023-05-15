@@ -45,17 +45,26 @@ public class DepartmentService : IDepartmentService
 
     public void Delete(string departmentName)
     {
-        try
+        var department=DBContext.Departments.Find(dpe=>dpe.Name==departmentName);
+        if(department!=null)
         {
-           DBContext.Departments.Find(dpe=>dpe.Name==departmentName);
-
+            throw new NotFoundException("Name not found");
         }
-        catch (Exception)
+        else
         {
+            DBContext.Departments.Find(dpe => dpe.Name == departmentName);
+        }
+        //try
+        //{
+        //   DBContext.Departments.Find(dpe=>dpe.Name==departmentName);
 
-        throw new NotFoundException("name not found");
+        //}
+        //catch (Exception)
+        //{
+
+        //throw new NotFoundException("name not found");
          
-        }
+        //}
 
     }
 
